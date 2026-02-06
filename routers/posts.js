@@ -6,4 +6,9 @@ app.get('/posts', function (req, res) {
 // show
 app.get('/posts/:id', function (req, res) {
     res.send('Dettaglio dei post' + req.params.id);
-}); 
+});
+
+// store
+app.post('/posts', function (req, res) {
+    res.send('Creazione nuovo post');
+});
