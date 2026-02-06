@@ -22,3 +22,8 @@ app.put('/posts/:id', function (req, res) {
 app.patch('/posts/:id', function (req, res) {
     res.send('Modifica parziale dei post' + req.params.id);
 });
+
+// destroy
+app.delete('/posts/:id', function (req, res) {
+    res.send('Eliminazione del post' + req.params.id);
+});
