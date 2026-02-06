@@ -17,3 +17,8 @@ app.post('/posts', function (req, res) {
 app.put('/posts/:id', function (req, res) {
     res.send('Modifica integrale dei post' + req.params.id);
 });
+
+// modify
+app.patch('/posts/:id', function (req, res) {
+    res.send('Modifica parziale dei post' + req.params.id);
+});
