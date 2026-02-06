@@ -5,7 +5,7 @@ app.get('/posts', function (req, res) {
 
 // show
 app.get('/posts/:id', function (req, res) {
-    res.send('Dettaglio dei post' + req.params.id);
+    res.send('Dettaglio del post' + req.params.id);
 });
 
 // store
@@ -15,12 +15,12 @@ app.post('/posts', function (req, res) {
 
 // update
 app.put('/posts/:id', function (req, res) {
-    res.send('Modifica integrale dei post' + req.params.id);
+    res.send('Modifica integrale del post' + req.params.id);
 });
 
 // modify
 app.patch('/posts/:id', function (req, res) {
-    res.send('Modifica parziale dei post' + req.params.id);
+    res.send('Modifica parziale del post' + req.params.id);
 });
 
 // destroy
